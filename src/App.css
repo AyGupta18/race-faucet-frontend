@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header-heading {
+  margin: 4px 8px;
+  /* background-color: red; */
+}
+
+.faucet-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.input-field {
+  padding: 16px;
+  margin: 8px;
+}
+
+button {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
