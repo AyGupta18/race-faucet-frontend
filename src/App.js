@@ -52,7 +52,7 @@ function App() {
         </div>
       </div>
 
-      <div className="w-1/2 py-16 m-auto bg-gradient-to-r  from-[#063762] to-[#368BCA] rounded-xl flex items-center justify-between shadow-lg">
+      <div className="w-1/2 py-16 m-auto bg-gradient-to-r  from-[#063762] to-[#368BCA] rounded-xl flex flex-col items-center justify-between shadow-lg">
         <div className="w-full flex justify-center items-center">
           <input
             className="w-8/12 p-2 mx-2 border-2 border-black rounded-md"
@@ -73,6 +73,12 @@ function App() {
             <Rings color="#00BFFF" height={80} width={80} />
           ) : null}
         </div>
+        {isProcessing ? (
+          <p className="m-1">
+            Request for tokens is under process. Please check wallet after some
+            time
+          </p>
+        ) : null}
       </div>
 
       <Footer></Footer>
